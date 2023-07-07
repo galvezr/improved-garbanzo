@@ -57,14 +57,16 @@
     </div>
     <a-scene embedded arjs gesture-detector id="sceneEl">
         <a-assets>
-            <img id="imagen-example" src="./foto-promocion.webp" alt="imagen-random" />
+            <img id="img-description" src="./descripcion.png" alt="imagen-random" />
+            <img id="grs-logo" src="./grs_logo.png" alt="grs-logo" />
         </a-assets>
-        <a-marker type="pattern" url="./1-marker.patt">
+        <a-marker type="pattern" url="./pattern/1-marker.patt">
             <!-- <a-sphere position="0 0 0" radius="0.6" color="#000"></a-sphere> -->
-            <a-image rotation="-90 0 0" position="0 0 0" width="2" height="2" src="#imagen-example"></a-image>
+            <a-image rotation="-90 0 0" position="0.5 0 -1" width="2" height="2" src="#img-description"></a-image>
+            <!-- <a-image rotation="-90 0 0" position="-0.5 0 1.6" width="2" height="2" src="#grs-logo"></a-image> -->
             <!-- <img src="./foto-promocion.webp" alt="imagen-random"/> -->
         </a-marker>
-        <a-marker type="pattern" url="./2-marker.patt">
+        <a-marker type="pattern" url="./pattern/2-marker.patt">
             <!-- <a-sphere position="0 0 0" radius="0.6" color="#fff"></a-sphere> -->
             <a-entity rotation="-90 0 0" position="0 0.7 0" id="text"
                 text="color: red; align: center; value: Attribute: A\nAttribute: B; width: 3;">

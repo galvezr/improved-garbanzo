@@ -7,7 +7,7 @@ AFRAME.registerComponent('markers_start', {
 
         //lists of the markers
         for (var i = 1; i < 19; i++) {
-            var url = './' + i + "-marker.patt";
+            var url = './pattern/' + i + "-marker.patt";
             markersURLArray.push(url);
             markersNameArray.push('Marker_' + i);
         }
